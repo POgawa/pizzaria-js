@@ -7,6 +7,10 @@ describe("Pizza", function() {
 
   });
 
-  
+  it("can have toppings added to it", function() {
+    var pizza = new Pizza("large")
+    pizza.addTopping("pepperoni")
+    expect(pizza.toppings).to.eql(["pepperoni"])
+  });
 
 });
