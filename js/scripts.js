@@ -17,3 +17,7 @@ function Pizza(size, toppings) {
   this.size = size
   this.cost = 0
 }
+
+Pizza.prototype.addTopping = function(topping) {
+  this.toppings.push(topping)
+};
