@@ -13,4 +13,11 @@ describe("Pizza", function() {
     expect(pizza.toppings).to.eql(["pepperoni"])
   });
 
+  it("can have its price calculated", function() {
+    var pizza = new Pizza("large")
+    pizza.addTopping("pepperoni")
+    pizza.addTopping("mushrooms")
+    pizza.calculateCost()
+    expect(pizza.cost).to.equal(15)
+  });
 });
