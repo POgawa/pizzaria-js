@@ -18,6 +18,6 @@ describe("Pizza", function() {
     pizza.addTopping("pepperoni")
     pizza.addTopping("mushrooms")
     pizza.calculateCost()
-    expect(pizza.cost).to.equal(15)
+    expect(pizza.cost).to.equal(18)
   });
 });
